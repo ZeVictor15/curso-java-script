@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de períodos do dia</title>
+    <style>
+        body{
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de períodos do dia</h1>
+    <input type="button" value="verificar" onclick="hora()">
+    <div id="res"></div>
+    <script>
+        function hora(){
+            var agora = new Date()
+            var hora  = agora.getHours()
+            var res = document.getElementById('res')
+            if(hora < 5){
+                res.innerHTML = `<p>Agora são exatamente ${hora} horas <strong>Boa Madrugada</strong></p>`
+            }else if(hora < 12){
+                res.innerHTML = `<p>Agora são exatamente ${hora} horas <strong>Bom Dia</strong></p>`
+            }else if(hora<18){
+                res.innerHTML = `<p>Agora são exatamente ${hora} horas <strong>Boa Tarde</strong></p>`
+            }else{
+                res.innerHTML = `<p>Agora são exatamente ${hora} horas <strong>Boa Noite</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

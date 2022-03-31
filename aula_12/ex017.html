@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da Semana</title>
+    <style>
+        body{
+            font: normal 15pt arial;
+        }
+        input{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador dia da semana</h1>
+    Clique para saber o dia da semana:<input type="button" value="dia" onclick="dia()">
+    <div id="res"></div>
+    <script>
+        function dia(){
+            var dia  = new Date()
+            var hoje = dia.getDay()
+            var res  = window.document.getElementById('res')
+            switch(hoje){
+                case 0: res.innerHTML = '<p><strong>Domingo</strong></p>'
+                break
+                case 1: res.innerHTML = '<p><strong>Segunda</strong></p>]'
+                break
+                case 2: res.innerHTML = '<p><strong>Terça</strong></p>'
+                break
+                case 3: res.innerHTML = '<p><strong>Quarta</strong></p>'
+                break
+                case 4: res.innerHTML = ' <p><strong>Quinta</strong></p>'
+                break
+                case 5: res.innerHTML = '<strong>Sexta</strong> '
+                break
+                case 6: res.innerHTML = '<strong>>Sabado</strong>Sabado'
+                break
+                default: res.innerHTML = '<strong>[ERROR] Dia inválido</strong>'
+                break
+            }
+        }
+    </script>
+</body>
+</html>

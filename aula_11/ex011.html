@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Nacionalidade</title>
+    <style>
+        body{
+            font: normal 13pt verdana;
+        }
+        input{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificar Nacionalidade</h1>
+    <input type="text" name="txtna" id="txtna">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var nal = window.document.getElementById('txtna')
+            var res = window.document.getElementById('res')
+            var val = String(nal.value.toLowerCase())
+            if (val == 'brasil') {
+                res.innerHTML = `<p>A sua nocianalidade é ${val.toUpperCase()} você é <strong>Brasileira</strong></p>`
+            }else{
+                res.innerHTML = `<p>A sua nocianalidade é ${val.toUpperCase()} você é <strong>Estrangeiro</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
