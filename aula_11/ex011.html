@@ -8,17 +8,32 @@
     <style>
         body{
             font: normal 13pt verdana;
+            background-color: black;
+            color: whitesmoke;
         }
         input{
             width: 200px;
         }
+        body a{
+            border-radius: 10px;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            font: normal 20pt arial;
+            padding: 13px;
+            background-color: #1de9b6;
+            border-radius: 1px 1px  solid black;
+
+         }
     </style>
 </head>
 <body>
     <h1>Verificar Nacionalidade</h1>
+    <p>Digite o país de nascimento</p>
     <input type="text" name="txtna" id="txtna">
     <input type="button" value="verificar" onclick="verificar()">
     <div id="res"></div>
+    <p><a href="../index.html">pagina principal</a></p>
     <script>
         function verificar(){
             var nal = window.document.getElementById('txtna')

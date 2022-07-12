@@ -1,5 +1,5 @@
 body{
-    background: rgb(7, 156, 64);
+    background: black;
     font: 15pt normal verdana;
 }
 
@@ -30,4 +30,16 @@ footer{
 res{
     font: 15pt normal verdana;
 }
+footer a{
+    
+    border-radius: 10px;       
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font: normal 20pt arial;
+    padding: 13px;
+    background-color: #1de9b6;
+    border-radius: 1px 1px  solid black;
 
+
+}

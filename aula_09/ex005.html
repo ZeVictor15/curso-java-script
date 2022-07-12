@@ -7,30 +7,42 @@
     <title>Document</title>
     <style>
         body{
-            background-color: blanchedalmond;
-            color: chocolate;
+            background-color: black;
+            color: white;
             font: normal 18pt arial;
         }
+        body a{
+            
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            font: normal 20pt arial;
+            padding: 13px;
+            background-color: #1de9b6;
+            border-radius: 10px;
+
+         }
     </style>
 </head>
 <body>
     <h1>Iniciando estudos em DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaSript</p>
-    <div id="msg">click em mim</div>
+    <div id="msg" > <input type="button" value="click em mim" onclick="click()"> </div>
+    <p><a href="../index.html">pagina principal</a></p>
     <script>
+    function click(){
        var corpo = window.document.body
        var p1 = document.getElementsByTagName('p')[0]
-       /*
        var d = window.document.getElementById("msg")
        corpo.style.backgroundColor = "black";
        window.document.write(`Está escrito assim: ${p1.innerText}`)
        d.style.color = "green"
        d.innerText = "Estou aguardando..."
        window.document.getElementById('msg').innerText = 'outra maneira de escrever'
-       */
-      var d = window.document.querySelector('div#msg')
-      d.toUpperCase()
+       var d = window.document.querySelector('div#msg')
+       d.toUpperCase()
+    }
     </script>
 </body>
 </html>

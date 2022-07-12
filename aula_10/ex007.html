@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Números</title>
     <style>
+        body{
+            background-color: black;
+            color: white;
+        }
         div{
             font: normal 18pt arial;
         }
@@ -17,6 +21,17 @@
         div#res{
             margin-top: 20px;
         }
+        body a{
+            border-radius: 10px;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            font: normal 20pt arial;
+            padding: 13px;
+            background-color: #1de9b6;
+            border-radius: 1px 1px  solid black;
+
+         }
     </style>
 </head>
 <body>
@@ -25,7 +40,7 @@
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="somar" onclick="somar()">
     <div id="res">resultado</div>
-    
+    <p><a href="../index.html">pagina principal</a></p>
     <script>
         function somar() {
             

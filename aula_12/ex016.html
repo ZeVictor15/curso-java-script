@@ -8,13 +8,27 @@
     <style>
         body{
             font: normal 15pt arial;
+            background-color: black;
+            color: white;
         }
+        body a{
+            border-radius: 10px;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: whitesmoke;
+            font: normal 20pt arial;
+            padding: 13px;
+            background-color: #1de9b6;
+            border-radius: 1px 1px  solid black;
+
+         }
     </style>
 </head>
 <body>
     <h1>Verificador de períodos do dia</h1>
     <input type="button" value="verificar" onclick="hora()">
     <div id="res"></div>
+    <p><a href="../index.html">pagina principal</a></p>
     <script>
         function hora(){
             var agora = new Date()
